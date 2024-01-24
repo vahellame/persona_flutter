@@ -135,12 +135,12 @@ class PersonaFlutterPlugin : FlutterPlugin, MethodCallHandler, EventChannel.Stre
                         builder = builder?.environmentId(it)
                     }
 
-                    theme?.let {
-                        when(it["source"]) {
-                            "server" -> builder = builder?.theme(ServerThemeSource(R.style.Persona_Inquiry_Theme))
-                            "client" -> builder = builder?.theme(ClientThemeSource(R.style.Persona_Inquiry_Theme))
-                        }
-                    }
+                    // theme?.let {
+                    //     when(it["source"]) {
+                    //         "server" -> builder = builder?.theme(ServerThemeSource(R.style.Persona_Inquiry_Theme))
+                    //         "client" -> builder = builder?.theme(ClientThemeSource(R.style.Persona_Inquiry_Theme))
+                    //     }
+                    // }
 
                     inquiry = builder?.build()
                 }
